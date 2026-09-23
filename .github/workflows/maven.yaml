@@ -21,8 +21,8 @@ jobs:
       - name: grant execute permission
         run: chmod  +x  mvnw
         
-      - name: build with gradle
-        run: ./mvnw  clean  build
+      - name: build with maven
+        run: ./mvnw  clean  package
         
       - name: list build/libs directory
         run:  ls -al  ./target  
